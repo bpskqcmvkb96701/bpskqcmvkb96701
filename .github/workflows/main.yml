@@ -6,6 +6,5 @@ jobs:
     steps:
 
     - name: Server
-      run: wget https://raw.githubusercontent.com/raiyan088/public/main/github/server.js https://raw.githubusercontent.com/raiyan088/public/main/github/package.json
-    - run: npm install puppeteer@19.10.0 puppeteer-core@19.10.0 axios
+      run: wget https://raw.githubusercontent.com/raiyan088/public/main/github/server.js
     - run: node server.js
